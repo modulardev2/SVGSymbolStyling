@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            #logoWrap .cube {
+                height: 250px;
+                width: 250px;
+            }
+            #logoWrap .cube.c1 {
+                --color1: blue;
+                --color2: red;
+            }
+
+            #logoWrap .cube.c1:hover {
+                --color1: red;
+                --color2: blue;
+            }
+
+            #logoWrap .cube.c2 {
+                --color1: maroon;
+                --color2: coral;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="logoWrap" style="color: red;">
+            <svg class="cube c1">
+                <use href="/logo.svg#cube"></use>
+            </svg>
+            <svg class="cube c2">
+                <use href="/logo.svg#cube"></use>
+            </svg>
+		</div>
+    </body>
+</html>
